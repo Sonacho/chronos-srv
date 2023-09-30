@@ -1,0 +1,12 @@
+{
+  "employees": [
+    { "name": "Nathan", "leftOn": "2023-10-01T12:00:00.000Z" },
+    { "name": "Eric", "leftOn": "2023-10-02T14:30:00.000Z" },
+    { "name": "John", "leftOn": "2023-10-03T09:15:00.000Z" },
+    { "name": "Doug", "leftOn": "2023-10-04T16:45:00.000Z" },
+    { "name": "Johny", "leftOn": "2023-10-05T11:20:00.000Z" },
+    { "name": "Red", "leftOn": "2023-10-06T13:10:00.000Z" },
+    { "name": "Jose", "leftOn": "2023-10-07T08:30:00.000Z" },
+    { "name": "Ivan", "leftOn": "2023-10-08T15:00:00.000Z" }
+  ]
+}
