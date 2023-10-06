@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Employee = require("../models/Employee"); // Import your Mongoose model
+const Employee = require("../models/employee"); // Import your Mongoose model
 
 // Create a new employee
 router.post("/", async (req, res) => {
@@ -18,9 +18,9 @@ router.post("/", async (req, res) => {
 router.patch("/", async (req, res) => {
   try {
     const newOrderEmployees = req.body;
-    newOrderEmployees.forEach(async e => {
-      await Employee.findByIdAndUpdate(e._id, e)
-    })
+    newOrderEmployees.forEach(async (e) => {
+      await Employee.findByIdAndUpdate(e._id, e);
+    });
     res.json("Succesfully patched");
   } catch (error) {
     console.error("Error creating employee:", error);
@@ -31,7 +31,7 @@ router.patch("/", async (req, res) => {
 // Get all employees
 router.get("/", async (req, res) => {
   try {
-    const employeeData = await Employee.find().sort({position: "asc"}); // Use a different variable name
+    const employeeData = await Employee.find().sort({ position: "asc" }); // Use a different variable name
     console.log(employeeData);
     res.json(employeeData);
   } catch (error) {

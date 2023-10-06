@@ -3,8 +3,10 @@ const app = express();
 const port = 3000;
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const employeeRoute = require("./routes/employees");
+const employeeRoute = require("./routes/Employees");
+const adminRoute = require("./routes/Admin");
 const cors = require("cors");
+const adminAuth = require("./routes/Auth");
 
 dotenv.config();
 app.use(express.json());
@@ -21,9 +23,9 @@ app.use(
   })
 );
 
-
-
 app.use("/employee", employeeRoute);
+app.use("/admin", adminRoute);
+app.use("/auth", adminAuth);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
