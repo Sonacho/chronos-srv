@@ -9,7 +9,14 @@
     "nodemon": "^3.0.1"
   },
   "scripts": {
-    "start": "index.js",
+    "start": "./index.js",
     "dev": "nodemon ./Repreve/index.js"
-  }
+  },
+  "name": "chronos-srv",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "ChronoKross",
+  "license": "ISC",
+  "description": ""
 }
