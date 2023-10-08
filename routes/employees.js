@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Employee = require("../models/employee"); // Import your Mongoose model
+const Employee = require("../models/Employee"); // Import your Mongoose model
 
 // Create a new employee
 router.post("/", async (req, res) => {
