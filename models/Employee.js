@@ -4,17 +4,16 @@ const employeeSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true
+      required: true,
     },
     position: {
       type: Number,
-      required: true
-    }
-
+      required: true,
+    },
   },
   { timestamps: true }
 );
 
-const employee = mongoose.model("employee", employeeSchema);
+const employee = mongoose.model("Employee", employeeSchema);
 
 module.exports = employee;

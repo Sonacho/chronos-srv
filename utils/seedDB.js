@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Employee = require("../models/Employee");
+const Employee = require("../models/employee");
 require("dotenv").config();
 
 mongoose
@@ -9,13 +9,13 @@ mongoose
 
 const seedData = [
   { name: "Nathan", position: 1 },
-  { name: "Eric"  , position: 2 },
-  { name: "John"  , position: 3 },
-  { name: "Doug"  , position: 4 },
-  { name: "Johny" , position: 5 },
-  { name: "Red"   , position: 6 },
-  { name: "Jose"  , position: 7 },
-  { name: "Ivan"  , position: 8 },
+  { name: "Eric", position: 2 },
+  { name: "John", position: 3 },
+  { name: "Doug", position: 4 },
+  { name: "Johny", position: 5 },
+  { name: "Red", position: 6 },
+  { name: "Jose", position: 7 },
+  { name: "Ivan", position: 8 },
 ];
 
 const seedDB = async () => {
