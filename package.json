@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "./index.js",
-    "dev": "nodemon ./Repreve/index.js"
+    "dev": "nodemon ./index.js"
   },
   "name": "chronos-srv",
   "version": "1.0.0",
